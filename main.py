@@ -88,16 +88,7 @@ while main_menu_flag:
                     #deleted_task = int(input("Enter id to delete: ")) 
                     #delete_task(deleted_task)
 
-                    
-                    
-                    
-
-                    
-                    
-                    
-                
-                    
-                
+   
 
                 ########    LOGOUT  ###########
                 elif(LOG_user_option == 4):
