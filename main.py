@@ -1,4 +1,3 @@
-from multiprocessing.sharedctypes import Value
 
 from pip import main
 from menu_functions import *
