@@ -7,9 +7,6 @@ from sqlalchemy.orm import sessionmaker
 import db
 from db import *
 
-
-
-
 #new session
 Session = sessionmaker(bind=db.engine)
 session = Session()
@@ -51,20 +48,12 @@ def edit_task(task_id):
         edited_task = str(input("Enter new Task Information: "))
         i.task_info = edited_task
 
-
-
 #DELETE Task
 def delete_task(task_id):
     obj = session.query(db.Task).filter(db.Task.taks_id == task_id)
     session.delete(obj)                                                             #jak usunac Rekord o podanym id?????
     session.commit()     
         
-
-    
-
-
-
-
 
 def show_logging_menu():
     print("(1) Login")
